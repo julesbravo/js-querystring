@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>Simple jQuery Query String Test</title>
+		<script id="script_tag" type="text/javascript" src="querystring.js?debug=1&key=a29afb821"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				console.debug($('#script_tag').attr('src').querystring());
+				console.debug($('#espn').attr('href').querystring());
+			});
+		</script>
+	</head>
+	<body>
+		<a id="espn" href="http://sports.espn.go.com/nfl/news/story?id=5119296&ts=1325232&empty">ESPN Story</a>
+	</body>
+</html>
